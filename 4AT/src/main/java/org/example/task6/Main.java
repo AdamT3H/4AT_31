@@ -4,7 +4,7 @@ import org.hibernate.Session;
 
 public class Main {
 
-    public static void createMeeting(String title, String date, String description, Integer id) {
+    public static Meeting createMeeting(String title, String date, String description, Integer id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
 
@@ -15,6 +15,8 @@ public class Main {
         session.close();
 
         System.out.println("Meeting created with ID: " + meeting.getId());
+
+        return meeting;
     }
 
     public static Meeting readMeeting(int id) {
@@ -35,19 +37,11 @@ public class Main {
         return meeting;
     }
 
-    public static void updateMeeting(int id, String newTitle, String newDescription) {
+    public static void updateMeeting(Meeting meeting) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
 
-        Meeting meeting = session.get(Meeting.class, id);
-        if (meeting != null) {
-            meeting.setTitle(newTitle);
-            meeting.setDescription(newDescription);
-            session.update(meeting);
-            System.out.println("Meeting updated!");
-        } else {
-            System.out.println("Meeting with ID " + id + " not found");
-        }
+        session.update(meeting);
 
         session.getTransaction().commit();
         session.close();
@@ -74,7 +68,7 @@ public class Main {
 
         readMeeting(3);
 
-        updateMeeting(3, "Updated Title", "Updated Description");
+//        updateMeeting(new Meeting());
 
         deleteMeeting(3);
     }
