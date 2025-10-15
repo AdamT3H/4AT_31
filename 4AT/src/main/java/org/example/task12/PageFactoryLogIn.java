@@ -13,26 +13,20 @@ public class PageFactoryLogIn {
     WebDriver driver;
 
     @FindBy(linkText = "Log in")
-    WebElement logInButton;
+    Element logInButton;
 
     @FindBy(id = "loginusername")
-    WebElement usernameField;
+    TextAreasWrapper usernameField;
 
     @FindBy(id = "loginpassword")
-    WebElement passwordField;
+    TextAreasWrapper passwordField;
 
     @FindBy(xpath = "//button[text()='Log in']")
-    WebElement confirmLoginButton;
-
-    TextAreasWrapper usernameInput;
-    TextAreasWrapper passwordInput;
+    Element confirmLoginButton;
 
     public PageFactoryLogIn(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
-
-        usernameInput = new TextAreasWrapper(driver, usernameField, "setTextTestUserName");
-        passwordInput = new TextAreasWrapper(driver, passwordField, "setTextTestPassword");
+        PageFactory.initElements(new MyFieldDecorator(driver), this);
     }
 
     public void logIn(String username, String password) {
@@ -40,8 +34,8 @@ public class PageFactoryLogIn {
 
         try { Thread.sleep(1000); } catch (InterruptedException e) { }
 
-        usernameInput.setText(username);
-        passwordInput.setText(password);
+        usernameField.setText(username);
+        passwordField.setText(password);
 
         confirmLoginButton.click();
     }
