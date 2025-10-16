@@ -9,33 +9,177 @@
 	"item": [
 		{
 			"name": "create checklist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"pm.globals.set(\"checklist_ID\", jsonData.id);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists?key={{trello_KEY}}&token={{trello_TOKEN}}&idCard={{card_ID}}&name=task15",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trello_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_TOKEN}}"
+						},
+						{
+							"key": "idCard",
+							"value": "{{card_ID}}"
+						},
+						{
+							"key": "name",
+							"value": "task15"
+						}
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "add item",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists/{{checklist_ID}}/checkItems?name=task15AddItemTest&key={{trello_KEY}}&token={{trello_TOKEN}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists",
+						"{{checklist_ID}}",
+						"checkItems"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "task15AddItemTest"
+						},
+						{
+							"key": "key",
+							"value": "{{trello_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_TOKEN}}"
+						}
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Update the name of the checklist",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists/{{checklist_ID}}?key={{trello_KEY}}&token={{trello_TOKEN}}&name=UpdatedTask15",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists",
+						"{{checklist_ID}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trello_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_TOKEN}}"
+						},
+						{
+							"key": "name",
+							"value": "UpdatedTask15"
+						}
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Delete the checklist",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists/{{checklist_ID}}?key={{trello_KEY}}&token={{trello_TOKEN}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists",
+						"{{checklist_ID}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{trello_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{trello_TOKEN}}"
+						}
+					]
+				}
 			},
 			"response": []
 		}
