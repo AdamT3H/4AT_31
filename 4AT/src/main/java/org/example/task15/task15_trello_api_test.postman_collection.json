@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "97989f19-c1ac-4503-8d07-85d429a3f62a",
+		"name": "task15_trello_api_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33194097",
+		"_collection_link": "https://kmlmkl.postman.co/workspace/fd~f1c8c747-651f-4825-80a9-e231f6c08ed7/collection/33194097-97989f19-c1ac-4503-8d07-85d429a3f62a?action=share&source=collection_link&creator=33194097"
+	},
+	"item": [
+		{
+			"name": "create checklist",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add item",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update the name of the checklist",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete the checklist",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
