@@ -1,5 +1,6 @@
 package org.example.task12;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,7 @@ public class PageFactoryLogIn {
         PageFactory.initElements(new MyFieldDecorator(driver), this);
     }
 
+    @Step
     public void logIn(String username, String password) {
         logInButton.click();
 

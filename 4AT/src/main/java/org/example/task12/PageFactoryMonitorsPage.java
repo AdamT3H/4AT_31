@@ -1,5 +1,6 @@
 package org.example.task12;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +29,7 @@ public class PageFactoryMonitorsPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    @Step
     public void testMonitorToCart() {
         toMonitorsPageButton.click();
 
