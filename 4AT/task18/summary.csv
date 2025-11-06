@@ -1,0 +1,81 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1762437515958,91,get login page,200,OK,Login userflow 1-1,text,true,,5290,130,1,3,http://localhost:8080/login_page.php,91,0,8
+1762437516050,46,post login,200,OK,Login userflow 1-1,text,true,,5591,306,1,3,http://localhost:8080/login_password_page.php,46,0,0
+1762437515958,202,get login page,200,OK,Reassigne Issue 3-1,text,true,,5290,130,1,3,http://localhost:8080/login_page.php,202,0,8
+1762437515958,202,get login page,200,OK,Assigne Issue 2-1,text,true,,5290,130,1,3,http://localhost:8080/login_page.php,201,0,8
+1762437516160,41,post login,200,OK,Assigne Issue 2-1,text,true,,5618,315,1,3,http://localhost:8080/login_password_page.php,41,0,0
+1762437516160,42,post login,200,OK,Reassigne Issue 3-1,text,true,,5591,306,1,3,http://localhost:8080/login_password_page.php,42,0,0
+1762437516096,213,post password,200,OK,Login userflow 1-1,text,true,,37299,1147,1,3,http://localhost:8080/my_view_page.php,48,0,0
+1762437516096,48,post password-0,302,Found,Login userflow 1-1,text,true,,820,244,1,3,http://localhost:8080/login.php?return=index.php&username=dev1&password=password&secure_session=on,48,0,0
+1762437516146,40,post password-1,302,Found,Login userflow 1-1,text,true,,619,318,1,3,http://localhost:8080/login_cookie_test.php?return=index.php,40,0,0
+1762437516186,39,post password-2,302,Found,Login userflow 1-1,text,true,,626,289,1,3,http://localhost:8080/index.php,39,0,0
+1762437516225,84,post password-3,200,OK,Login userflow 1-1,text,true,,35234,296,1,3,http://localhost:8080/my_view_page.php,84,0,0
+1762437516202,130,post password,200,OK,Assigne Issue 2-1,text,true,,14004,870,1,3,http://localhost:8080/account_page.php,42,0,0
+1762437516202,42,post password-0,302,Found,Assigne Issue 2-1,text,true,,827,249,1,3,http://localhost:8080/login.php?return=index.php&username=administrator&password=root&secure_session=on,42,0,0
+1762437516244,40,post password-1,302,Found,Assigne Issue 2-1,text,true,,626,325,1,3,http://localhost:8080/login_cookie_test.php?return=account_page.php,40,0,0
+1762437516284,48,post password-2,200,OK,Assigne Issue 2-1,text,true,,12551,296,1,3,http://localhost:8080/account_page.php,47,0,0
+1762437516202,216,post password,200,OK,Reassigne Issue 3-1,text,true,,40015,1147,1,3,http://localhost:8080/my_view_page.php,44,0,0
+1762437516202,44,post password-0,302,Found,Reassigne Issue 3-1,text,true,,820,244,1,3,http://localhost:8080/login.php?return=index.php&username=dev2&password=password&secure_session=on,44,0,0
+1762437516246,40,post password-1,302,Found,Reassigne Issue 3-1,text,true,,619,318,1,3,http://localhost:8080/login_cookie_test.php?return=index.php,40,0,0
+1762437516286,40,post password-2,302,Found,Reassigne Issue 3-1,text,true,,626,289,1,3,http://localhost:8080/index.php,40,0,0
+1762437516326,92,post password-3,200,OK,Reassigne Issue 3-1,text,true,,37950,296,1,3,http://localhost:8080/my_view_page.php,91,0,0
+1762437516419,52,get repport page,200,OK,Reassigne Issue 3-1,text,true,,25823,293,1,3,http://localhost:8080/view.php?id=5,50,0,0
+1762437516312,166,get login page,200,OK,Login userflow 1-1,text,true,,41076,879,1,3,http://localhost:8080/my_view_page.php,42,0,0
+1762437516312,42,get login page-0,302,Found,Login userflow 1-1,text,true,,5216,294,1,3,http://localhost:8080/login_page.php,42,0,0
+1762437516355,38,get login page-1,302,Found,Login userflow 1-1,text,true,,626,289,1,3,http://localhost:8080/index.php,38,0,0
+1762437516394,84,get login page-2,200,OK,Login userflow 1-1,text,true,,35234,296,1,3,http://localhost:8080/my_view_page.php,82,0,0
+1762437516334,162,get bug repport page,200,OK,Assigne Issue 2-1,text,true,,20396,1285,1,3,http://localhost:8080/bug_report_page.php,41,0,0
+1762437516334,41,get bug repport page-0,302,Found,Assigne Issue 2-1,text,true,,660,299,1,3,http://localhost:8080/bug_report_page.php,41,0,0
+1762437516375,38,get bug repport page-1,302,Found,Assigne Issue 2-1,text,true,,662,330,1,3,http://localhost:8080/login_select_proj_page.php?ref=bug_report_page.php,38,0,0
+1762437516413,39,get bug repport page-2,302,Found,Assigne Issue 2-1,text,true,,741,332,1,3,http://localhost:8080/set_project.php?project_id=1&ref=bug_report_page.php,39,0,0
+1762437516452,44,get bug repport page-3,200,OK,Assigne Issue 2-1,text,true,,18333,324,1,3,http://localhost:8080/bug_report_page.php,42,0,0
+1762437516475,47,post repport bug,200,OK,Reassigne Issue 3-1,text,true,,15909,455,1,3,http://localhost:8080/bug_update_page.php,45,0,0
+1762437516522,45,post new bug repport,200,OK,Reassigne Issue 3-1,text,true,,8891,722,1,3,http://localhost:8080/bug_update.php,43,0,0
+1762437516478,164,post login,200,OK,Login userflow 1-1,text,true,,41470,1008,1,2,http://localhost:8080/my_view_page.php,41,0,0
+1762437516478,41,post login-0,302,Found,Login userflow 1-1,text,true,,5607,423,1,2,http://localhost:8080/login_password_page.php,41,0,0
+1762437516519,41,post login-1,302,Found,Login userflow 1-1,text,true,,626,289,1,2,http://localhost:8080/index.php,41,0,0
+1762437516560,82,post login-2,200,OK,Login userflow 1-1,text,true,,35237,296,1,2,http://localhost:8080/my_view_page.php,80,0,0
+1762437516497,308,post bug repport,200,OK,Assigne Issue 2-1,text,true,,10100,745,1,2,http://localhost:8080/bug_report.php?posted=1,304,0,0
+1762437516643,189,post password,200,OK,Login userflow 1-1,text,true,,31289,1264,1,1,http://localhost:8080/my_view_page.php,45,0,0
+1762437516643,45,post password-0,302,Found,Login userflow 1-1,text,true,,820,361,1,1,http://localhost:8080/login.php?return=index.php&username=reporter1&password=password&secure_session=on,45,0,0
+1762437516689,38,post password-1,302,Found,Login userflow 1-1,text,true,,619,318,1,1,http://localhost:8080/login_cookie_test.php?return=index.php,38,0,0
+1762437516727,36,post password-2,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,36,0,0
+1762437516764,68,post password-3,200,OK,Login userflow 1-1,text,true,,29224,296,1,1,http://localhost:8080/my_view_page.php,66,0,0
+1762437516833,142,get login page,200,OK,Login userflow 1-1,text,true,,35066,879,1,1,http://localhost:8080/my_view_page.php,39,0,0
+1762437516833,39,get login page-0,302,Found,Login userflow 1-1,text,true,,5216,294,1,1,http://localhost:8080/login_page.php,39,0,0
+1762437516872,36,get login page-1,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,36,0,0
+1762437516908,67,get login page-2,200,OK,Login userflow 1-1,text,true,,29224,296,1,1,http://localhost:8080/my_view_page.php,65,0,0
+1762437516976,142,post login,200,OK,Login userflow 1-1,text,true,,36438,1008,1,1,http://localhost:8080/my_view_page.php,39,0,0
+1762437516976,39,post login-0,302,Found,Login userflow 1-1,text,true,,5607,423,1,1,http://localhost:8080/login_password_page.php,39,0,0
+1762437517015,35,post login-1,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,35,0,0
+1762437517050,68,post login-2,200,OK,Login userflow 1-1,text,true,,30205,296,1,1,http://localhost:8080/my_view_page.php,66,0,0
+1762437517119,177,post password,200,OK,Login userflow 1-1,text,true,,32270,1264,1,1,http://localhost:8080/my_view_page.php,38,0,0
+1762437517119,38,post password-0,302,Found,Login userflow 1-1,text,true,,820,361,1,1,http://localhost:8080/login.php?return=index.php&username=reporter2&password=password&secure_session=on,38,0,0
+1762437517158,37,post password-1,302,Found,Login userflow 1-1,text,true,,619,318,1,1,http://localhost:8080/login_cookie_test.php?return=index.php,37,0,0
+1762437517195,35,post password-2,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,35,0,0
+1762437517231,65,post password-3,200,OK,Login userflow 1-1,text,true,,30205,296,1,1,http://localhost:8080/my_view_page.php,64,0,0
+1762437517301,140,get login page,200,OK,Login userflow 1-1,text,true,,36047,879,1,1,http://localhost:8080/my_view_page.php,37,0,0
+1762437517301,37,get login page-0,302,Found,Login userflow 1-1,text,true,,5216,294,1,1,http://localhost:8080/login_page.php,37,0,0
+1762437517338,37,get login page-1,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,37,0,0
+1762437517375,66,get login page-2,200,OK,Login userflow 1-1,text,true,,30205,296,1,1,http://localhost:8080/my_view_page.php,65,0,0
+1762437517443,141,post login,200,OK,Login userflow 1-1,text,true,,36450,1012,1,1,http://localhost:8080/my_view_page.php,39,0,0
+1762437517443,39,post login-0,302,Found,Login userflow 1-1,text,true,,5619,427,1,1,http://localhost:8080/login_password_page.php,39,0,0
+1762437517482,36,post login-1,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,36,0,0
+1762437517518,66,post login-2,200,OK,Login userflow 1-1,text,true,,30205,296,1,1,http://localhost:8080/my_view_page.php,65,0,0
+1762437517585,110,post password,200,OK,Login userflow 1-1,text,true,,14067,982,1,1,http://localhost:8080/account_page.php,38,0,0
+1762437517585,38,post password-0,302,Found,Login userflow 1-1,text,true,,827,361,1,1,http://localhost:8080/login.php?return=index.php&username=administrator&password=root&secure_session=on,38,0,0
+1762437517623,34,post password-1,302,Found,Login userflow 1-1,text,true,,626,325,1,1,http://localhost:8080/login_cookie_test.php?return=account_page.php,34,0,0
+1762437517658,37,post password-2,200,OK,Login userflow 1-1,text,true,,12614,296,1,1,http://localhost:8080/account_page.php,36,0,0
+1762437517697,142,get login page,200,OK,Login userflow 1-1,text,true,,42338,879,1,1,http://localhost:8080/my_view_page.php,36,0,0
+1762437517697,36,get login page-0,302,Found,Login userflow 1-1,text,true,,5216,294,1,1,http://localhost:8080/login_page.php,36,0,0
+1762437517734,33,get login page-1,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,33,0,0
+1762437517768,71,get login page-2,200,OK,Login userflow 1-1,text,true,,36496,296,1,1,http://localhost:8080/my_view_page.php,69,0,0
+1762437517839,147,post login,200,OK,Login userflow 1-1,text,true,,42714,1003,1,1,http://localhost:8080/my_view_page.php,38,0,0
+1762437517839,38,post login-0,302,Found,Login userflow 1-1,text,true,,5592,418,1,1,http://localhost:8080/login_password_page.php,38,0,0
+1762437517878,34,post login-1,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,34,0,0
+1762437517913,73,post login-2,200,OK,Login userflow 1-1,text,true,,36496,296,1,1,http://localhost:8080/my_view_page.php,72,0,0
+1762437517987,183,post password,200,OK,Login userflow 1-1,text,true,,38283,1259,1,1,http://localhost:8080/my_view_page.php,38,0,0
+1762437517987,38,post password-0,302,Found,Login userflow 1-1,text,true,,820,356,1,1,http://localhost:8080/login.php?return=index.php&username=dev1&password=password&secure_session=on,38,0,0
+1762437518026,34,post password-1,302,Found,Login userflow 1-1,text,true,,619,318,1,1,http://localhost:8080/login_cookie_test.php?return=index.php,34,0,0
+1762437518060,38,post password-2,302,Found,Login userflow 1-1,text,true,,626,289,1,1,http://localhost:8080/index.php,38,0,0
+1762437518098,72,post password-3,200,OK,Login userflow 1-1,text,true,,36218,296,1,1,http://localhost:8080/my_view_page.php,70,0,0
