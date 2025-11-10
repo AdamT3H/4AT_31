@@ -19,7 +19,12 @@ public class Task20Test{
                 .setDeviceName("Pixel_8")
                 .setApp(apkFile.getAbsolutePath());
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-        driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"App\"]")).click();
+
+        driver.findElement(By.id("com.motorola.cn.calculator:id/formula_or_result"))
+                .sendKeys("999999999999999999999");
+
+        driver.findElement(By.id("com.motorola.cn.calculator:id/eq")).click();
+
         driver.quit();
     }
 }
