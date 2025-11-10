@@ -11,7 +11,7 @@ public class ConfPropReader {
 
     static {
         try {
-            properties.load(new FileInputStream("/Users/adamogorodnik/IdeaProjects/4AT_31/4AT/src/main/resources/confProp"));
+            properties.load(new FileInputStream("src/main/resources/confProp"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
